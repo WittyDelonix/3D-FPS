@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://vbl2hipleqsb"]
+
+[ext_resource type="PackedScene" uid="uid://b2chptlch1csw" path="res://environment/assets/village/structures/models/castle_archway_base_1.glb" id="1_70fh3"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_htn80"]
+points = PackedVector3Array(5.99983, 8.88209, -0.500103, 5.99983, 8.36651, 0.784089, 5.99983, 0, -0.500103, 2.66863, 4.15761, -0.703529, 1.92393, 5.48957, -0.703529, -8.67844e-05, 6.69373, -0.703529, -6, 8.88209, -0.500103, 2.66863, 0, 0.703417, 4.55271, 0.914639, 0.64386, 5.99983, 0, 0.499991, -6, 8.36651, 0.784089, 2.66863, 0, -0.703529, -1.92527, 5.48957, -0.703529, -2.66998, 4.15761, -0.703529, -6, 0, -0.500103, -2.66998, 0, 0.703417, -6, 0, 0.499991, -4.55405, 0.914639, 0.64386, -2.66998, 0, -0.703529)
+
+[node name="CastleArchwayBase1" instance=ExtResource("1_70fh3")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="archway_base" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="archway_base/StaticBody3D" index="0"]
+shape = SubResource("ConvexPolygonShape3D_htn80")
